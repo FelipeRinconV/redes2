@@ -23,4 +23,33 @@ public class Logica {
         }
         return mascaraEnBinario;
     }
+
+    /**
+     * Metodo que recibe la cantidad de bits en 1 de la mascara de red
+     * y retorna el numero de bits usados para los host
+     *
+     * @param mascaraRed
+     * @return numeroBitsHost que es un String con el numero de bits usador por el host en la red
+     */
+    public static String calcularBitsHost(String mascaraRed){
+
+        int bitsMascaraRed = 32 - Integer.parseInt(mascaraRed);
+
+        String numeroBitsHost = String.valueOf(bitsMascaraRed);
+
+        return numeroBitsHost;
+    }
+
+    public static String calcularDireccionesParaAsignar(String numeroDeBits){
+
+        String DireccionesParaAsignar = "";
+
+        int numeroBits = Integer.parseInt(numeroDeBits);
+
+        int numeroDirecciones = (int) Math.pow(2,numeroBits);
+
+
+
+        return null;
+    }
 }
